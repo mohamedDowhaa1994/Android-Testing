@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dowhaa.clcalutoerswish.MainActivity">
+
+    <TextView
+        android:text="Clacultoer App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtnum2"
+        android:hint="Enter Number2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtnum1"
+        android:layout_alignStart="@+id/txtnum1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layoutDirection="ltr" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtnum1"
+        android:hint="Enter Number1"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layoutDirection="ltr" />
+
+    <Button
+        android:text="Clacultoer with swish"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/button"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/txtnum2"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txttime" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txttime"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/txtdate" />
+</RelativeLayout>
